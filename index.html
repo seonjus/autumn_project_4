@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+	<style type="text/css">
+		@font-face { font-family: 'DungGeunMo'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff') format('woff'); font-weight: normal; font-style: normal; }
+		
+		html{background-color: #D4F4FA;}
+		#wrap{width: 1200px; overflow: hidden;margin: auto;}
+		body{margin: 0;}
+		section{width: 1200px; height: 500px; position: relative; display: block; margin: auto;}
+		#monitor{position:fixed; background:#D4F4FA; padding:5px; top:0; right:0; width:70px; height:20px; color:#D4F4FA;}
+
+		#a{background: url(aback.png); background-size: cover; background-attachment: fixed; }
+		#mytitle{position: fixed;}
+
+		#b{background-color: white; height: 800px; }		
+		#head1{margin: 0;font-size: 60pt; text-shadow: 5px 5px 0px gray; position: absolute; font-family: 'DungGeunMo'; margin-left: 6%; margin-top: 9%; opacity: 0 ;}
+		.text1{width: 300px; position: absolute; margin-left: 58%; margin-top: 35%; font-size: 11pt; line-height: 2; font-family: 'Noto Sans KR', sans-serif; border-radius:2%;}
+		#t1{background: black; padding: 30px; color: white; opacity: 0;}
+
+		#c{background-color: black; height: 800px; }
+		#head2{margin: 0; color: white; font-size: 60pt; text-shadow: 5px 5px 0px gray; position: absolute; font-family: 'DungGeunMo'; margin-left: 6%; margin-top: 9%;opacity: 0 ;}
+		.text2{width: 300px; position: absolute; margin-left: 43%; margin-top: 8%; font-size: 11pt; line-height: 2; font-family: 'Noto Sans KR', sans-serif;border-radius:2%;}
+		#t2{background: white; padding: 30px; color: black;opacity: 0 ;}
+		.text22{width: 430px; position: absolute; margin-left: 42%; margin-top: 58%; font-size: 11pt; line-height: 2; font-family: 'Noto Sans KR', sans-serif; text-align: center;border-radius:2%;}
+		#t22{background: white; padding: 10px; color: black;opacity: 0 ;}
+
+		#d{background: url(dback.jpg); background-size: cover; background-attachment: fixed; height: 800px;}
+		#head3{margin: 0; color: white; font-size: 60pt; text-shadow: 5px 5px 0px gray; position: absolute; font-family: 'DungGeunMo'; margin-left: 6%; margin-top: 9%;opacity: 0 ;}
+		.text3{width: 300px; position: absolute; margin-left: 55%; margin-top: 27%; font-size: 11pt; line-height: 2; font-family: 'Noto Sans KR', sans-serif;border-radius:2%;}
+		#t3{background: white; padding: 30px; color: black;opacity: 0 ;}
+
+		@keyframes opa1{
+			from{opacity: 0;}
+			to{opacity: 1;}
+		}
+
+		@keyframes opa2{
+			from{opacity:1;}
+			to{opacity: 0;}
+		}
+
+
+		@keyframes up1{
+			from{opacity: 0; margin-top: 14%; }
+			to{opacity: 1;  }
+		}
+
+
+		@keyframes up2{
+			from{opacity: 0; margin-top: 28%; }
+			to{opacity: 1;  }
+		}
+
+		@keyframes left1{
+			from{opacity: 0; margin-left: 63%; }
+			to{opacity: 1;  }
+		}
+
+		@keyframes up3{
+			from{opacity: 0; margin-top: 30%; }
+			to{opacity: 1;  }
+		}
+
+		@keyframes left2{
+			from{opacity: 0; margin-left: 65%; }
+			to{opacity: 1;  }
+		}
+
+		@keyframes right1{
+			from{opacity: 0; margin-left: 35%; }
+			to{opacity: 1;  }
+		}
+
+		@keyframes up4{
+			from{opacity: 0; margin-top: 10%; }
+			to{opacity: 1;  }
+		}
+
+		@keyframes up5{
+			from{opacity: 0; margin-top: 35%; }
+			to{opacity: 1;  }
+		}
+
+
+		@keyframes right2{
+			from{opacity: 0; margin-left: 5%; }
+			to{opacity: 1;  }
+		}
+	</style>
+</head>
+<body>
+	<div id="monitor"></div>
+	<div id="wrap">
+		<section id="a">
+				<img src="mytitle.jpg" style="margin: auto; display: block;  margin-left: 18%; margin-top: 7%;  " id="mytitle">
+				<img src="play.gif" style="display: block; width: 200px; position: fixed; margin-left: 27%; margin-top: 17%;" id="play">
+				<img src="slime.gif" style="display: block; width: 250px;position: fixed; margin-left: 47%; margin-top: 12%; transform: rotate(20deg);" id="slime">
+				<img src="plantera.gif" style="display: block; width: 200px; position: fixed; transform: rotate(-20deg); margin-left: 5%; margin-top: 9%;" id="plantera">
+		</section>
+
+		<section id="b">
+				<img src="start.gif" style="display: block; position: absolute; margin-left: 12%; margin-top: 23%; width: 500px; border-radius:2%; opacity: 0;" id="start">
+				<h1 id="head1">테라리아는?</h1>
+				<div class="text1" id="t1"> 테라리아는 2D의 단면화된 시야를 배경으로 캐릭터가 움직이는 3인칭 게임입니다. 아이템이 매우 다양하고 환상적인 요소가 담겨져 있는 RPG 게임형태를 띄고 있습니다. 유한한 맵에서 다양한 건축 블록과 아이템으로 나만의 세계를 꾸미고, 다양한 NPC들을 만나볼 수 있으며, 강력한 보스들을 처치할 수 있습니다. 또한, 특정 조건을 만족하면 일어나는 특별한 이벤트도 찾아볼 수 있습니다.</div>
+		</section>
+
+		<section id="c">
+				<img src="house1.png" style="display: block; position: absolute; margin-left: 13%; margin-top: 21%; width: 400px;border-radius:2%;opacity: 0 ;" id="house1">
+				<h1 id="head2">집 짓기</h1>
+				<div class="text2" id="t2">집을 지을 때는 2D라는 특징 덕분에 간단한 편입니다. 적절히 사각형으로 지으면 되지만 자신만의 독특한 집을 짓는 것도 게임 속 재미중 하나입니다. 집의 지형지물이 되는 블록과 2D의 배경이 되는 벽을 설치하는 식으로 집을 짓게 되는데, 블록과 벽타일의 종류가 수백 가지나 되며, 추가로 페인트나 특수 블록으로 더 다양한 색감과 질감을 낼 수 있습니다.</div>
+
+				<img src="house2.gif" style="display: block;position: absolute; width: 350px; margin-left: 59%; margin-top: 35%;border-radius:2%;opacity: 0 ;" id="house2">
+				<div class="text22" id="t22">땅 위에 짓는 것뿐만 아니라 자연지형 속에도 집을 지을 수 있습니다.</div>
+		</section>
+
+		<section id="d">
+				<h1 id="head3">전투와 무기</h1>
+				<img src="fight1.gif" style="display: block;position: absolute; margin-top: 5%; margin-left: 60%; border-radius:2%;opacity: 0 ; " id="fight1" >
+				<div class="text3" id="t3">테라리아는 전투의 비중이 높습니다. 낮에는 슬라임을 잡아 젤을 얻어 횃불을 만들고, 밤에는 좀비 떼와 하늘을 날아다니는 악마의 눈들에게서 몸을 지켜야 합니다. 몬스터를 잡으면 재화를 일정량의 재화도 얻을 수 있습니다. 특정 조건을 만족하면 고블린 부대가 레이드를 오며, 지하 최하층으로 가게 되면 있는 지옥에서는 악마들과 싸우게 됩니다. 이외에도 여러 보스 몬스터가 등장하며, 이들을 잡아야만 얻을 수 있는 아이템이 있어 반드시 잡아야 합니다. 장비에 따라 차이가 많이 나므로 더 좋은 무기를 얻는 것이 중요합니다.</div>
+				<img src="fight2.gif" style="display: block;position: absolute; margin-top: 21%; margin-left: 10%; border-radius:2%;opacity: 0 ;" id="fight2" >
+				<img src="dragon.gif" style="display: block; position: absolute; margin-left: 40%; margin-top: 30%;opacity: 0 ;" id="dragon">
+				<img src="eye1.gif" style="display: block; width: 300px; position: absolute; margin-top: 45%; margin-left: 10%; transform: scaleX(-1); opacity: 0;" id="eye1">
+		</section>
+		
+	</div>
+
+	<script type="text/javascript">
+		
+		window.onscroll = function(){
+			var t = document.documentElement.scrollTop + document.body.scrollTop;
+			monitor.innerHTML = t;
+
+			if(t > 200){a.style.animation = "opa2 1s forwards";}
+			else{a.style.animation = "";}
+
+			if(t > 900){b.style.animation = "opa2 1s forwards";}
+			else{b.style.animation = "";}
+
+			if(t > 1600){c.style.animation = "opa2 1s forwards";}
+			else{c.style.animation = "";}
+
+			if(t > 300){head1.style.animation="up1 1s forwards";}
+			else{head1.style.animation="";}
+
+			if(t > 300){start.style.animation="up2 2s forwards";}
+			else{start.style.animation="";}
+
+			if(t > 350){t1.style.animation="left1 2s forwards";}
+			else{t1.style.animation="";}
+
+			if(t > 1150){head2.style.animation="up1 1s forwards";}
+			else{head2.style.animation="";}
+
+			if(t > 1150){house1.style.animation="up3 2s forwards";}
+			else{house1.style.animation="";}
+
+			if(t > 1150){t2.style.animation="up3 2s forwards";}
+			else{t2.style.animation="";}
+
+			if(t > 1200){house2.style.animation="left2 2s forwards";}
+			else{house2.style.animation="";}
+
+			if(t > 1200){t22.style.animation="right1 2s forwards";}
+			else{t22.style.animation="";}
+
+			if(t > 1800){head3.style.animation="up1 1s forwards";}
+			else{head3.style.animation="";}
+
+			if(t > 1800){fight1.style.animation="up4 1s forwards";}
+			else{fight1.style.animation="";}
+
+			if(t > 1800){t3.style.animation="up5 1s forwards";}
+			else{t3.style.animation="";}
+
+			if(t > 1800){fight2.style.animation="right2 2s forwards";}
+			else{fight2.style.animation="";}
+
+			if(t > 1800){dragon.style.animation="opa1 2s forwards";}
+			else{dragon.style.animation="";}
+
+			if(t > 1800){eye1.style.animation="opa1 2s forwards";}
+			else{eye1.style.animation="";}
+		}
+	</script>
+</body>
+</html>
